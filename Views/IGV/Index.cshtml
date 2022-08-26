@@ -11,23 +11,26 @@
     <script src='main.js'></script>
 </head>
 <body>
-   Nombre
-   <form asp-controller="IGV" asp-action="Calcular">
+    Completar el IGV de un producto
+  
+<form asp-controller="IGV" asp-action="Calcular">
+
+    <strong><label asp-for="Operador1" class="control-label"></label></strong>
     <input asp-for="Operador1" class="form-control" />
-   </form> 
-   Kilogramos
-    <form asp-controller="IGV" asp-action="Calcular">
+  
+   <strong><label asp-for="Operador2" class="control-label"></label></strong>
     <input asp-for="Operador2" class="form-control" />
-   </form> 
-   Unidad
-   <form asp-controller="IGV" asp-action="Calcular">
+    
+    <strong><label asp-for="Operador3" class="control-label"></label></strong>
     <input asp-for="Operador3" class="form-control" />
-   </form> 
-   Precio
+   
+   </form>
+
   <form asp-controller="IGV" asp-action="Calcular">
+    <strong><label asp-for="Pre" class="control-label"></label></strong>
     <input asp-for="Pre" class="form-control" />
     <button type="submit" class="btn btn-primary">Calcular</button>
-   </form> 
+   </form>
   
     <h1>@ViewData["Message"]</h1>
 </body>
